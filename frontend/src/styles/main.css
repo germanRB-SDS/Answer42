@@ -1,0 +1,463 @@
+/**
+ * Answer42 - Estilos principales
+ * Diseño simple y accesible para taller DAW
+ */
+
+/* Reset y variables */
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-secondary: #64748b;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-text-light: #64748b;
+  --color-border: #e2e8f0;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* App container */
+.app-container {
+  min-height: 100vh;
+}
+
+/* Loading */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+}
+
+/* =====================
+   Auth Forms (Login/Register)
+   ===================== */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.auth-card {
+  background: var(--color-card);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-card h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  color: var(--color-text);
+}
+
+.auth-subtitle {
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group input.input-error {
+  border-color: var(--color-error);
+}
+
+.form-group input:disabled {
+  background-color: var(--color-bg);
+  cursor: not-allowed;
+}
+
+.field-error {
+  color: var(--color-error);
+  font-size: 0.8rem;
+}
+
+.field-hint {
+  color: var(--color-text-light);
+  font-size: 0.8rem;
+}
+
+.auth-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.auth-footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   Buttons
+   ===================== */
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #475569;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+/* =====================
+   Alerts
+   ===================== */
+
+.alert {
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.alert-error {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+}
+
+.alert-warning {
+  background-color: #fffbeb;
+  border: 1px solid #fde68a;
+  color: #d97706;
+}
+
+.alert-success {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #16a34a;
+}
+
+.alert strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.alert p {
+  margin: 0.25rem 0;
+}
+
+.alert small {
+  display: block;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+
+/* =====================
+   Didactic Notes
+   ===================== */
+
+.didactic-note {
+  background-color: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-left: 4px solid var(--color-primary);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #0c4a6e;
+}
+
+.didactic-note strong {
+  color: var(--color-primary);
+}
+
+.didactic-note ul {
+  margin: 0.5rem 0 0 1rem;
+  padding: 0;
+}
+
+.didactic-note li {
+  margin: 0.25rem 0;
+}
+
+/* =====================
+   Dashboard
+   ===================== */
+
+.dashboard-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dashboard-header h1 {
+  font-size: 1.75rem;
+}
+
+/* Sections */
+.alerts-section,
+.profile-section,
+.hash-section,
+.history-section,
+.stats-section {
+  background: var(--color-card);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.5rem;
+}
+
+.alerts-section h2,
+.profile-section h2,
+.hash-section h2,
+.history-section h2,
+.stats-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+/* Profile card */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.profile-row {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+.profile-row .label {
+  font-weight: 500;
+  color: var(--color-text-light);
+  min-width: 120px;
+}
+
+.profile-row .value {
+  color: var(--color-text);
+}
+
+/* Hash display */
+.hash-display {
+  background: #1e293b;
+  padding: 1rem;
+  border-radius: var(--radius);
+  overflow-x: auto;
+}
+
+.hash-display code {
+  color: #22d3ee;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.8rem;
+  word-break: break-all;
+}
+
+/* History tables */
+.history-table {
+  overflow-x: auto;
+}
+
+.history-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.history-table th,
+.history-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.history-table th {
+  background: var(--color-bg);
+  font-weight: 600;
+  color: var(--color-text-light);
+}
+
+.history-table tr.current {
+  background-color: #f0fdf4;
+}
+
+.history-table tr.current td:first-child::before {
+  content: '● ';
+  color: var(--color-success);
+}
+
+.history-table code {
+  background: var(--color-bg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.history-table .user-agent {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+/* Stats grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  background: var(--color-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-top: 0.25rem;
+}
+
+/* =====================
+   Responsive
+   ===================== */
+
+@media (max-width: 640px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .profile-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .profile-row .label {
+    min-width: auto;
+  }
+
+  .history-table {
+    font-size: 0.8rem;
+  }
+
+  .history-table th,
+  .history-table td {
+    padding: 0.5rem;
+  }
+}

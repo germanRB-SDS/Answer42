@@ -1,0 +1,36 @@
+{
+  "name": "answer42-backend",
+  "version": "0.1.0",
+  "description": "Backend seguro para taller DAW - Autenticación con OWASP",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test tests/",
+    "db:init": "node src/config/initDb.js"
+  },
+  "keywords": ["auth", "security", "owasp", "express"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "better-sqlite3": "^11.3.0",
+    "argon2": "^0.41.1",
+    "express-session": "^1.18.0",
+    "connect-sqlite3": "^0.9.15",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "express-validator": "^7.2.0",
+    "csrf-csrf": "^3.0.6",
+    "cookie-parser": "^1.4.6",
+    "winston": "^3.14.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

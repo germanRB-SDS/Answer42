@@ -1,0 +1,16 @@
+{
+  "name": "answer42",
+  "version": "0.1.0",
+  "description": "Sistema de autenticación seguro - Taller DAW",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev": "echo 'Ejecutar en terminales separadas: npm run dev:backend && npm run dev:frontend'",
+    "build": "npm run build --prefix frontend",
+    "test": "npm test --prefix backend"
+  },
+  "keywords": ["auth", "security", "owasp", "taller", "daw"],
+  "license": "MIT"
+}
