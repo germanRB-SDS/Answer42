@@ -203,19 +203,7 @@ Los tests de integración pueden verse afectados por el rate limiting configurad
 
 ## 9. Próximos Pasos
 
-```
-[✅] Prompt 1: Arquitectura y decisiones
-[✅] Prompt 2: Setup del proyecto
-[✅] Prompt 3: Backend base + SQLite
-[✅] Prompt 4: Registro
-[✅] Prompt 5: Login + sesiones
-[✅] Prompt 6: Seguridad avanzada
-[✅] Prompt 7: Frontend login/registro
-[✅] Prompt 8: Dashboard + alertas
-[✅] Prompt 9: Tests mínimos (ACTUAL)
-[ ] Prompt 10: Revisión OWASP
-[ ] Prompt 11: Documentación final
-```
+> **Estado actualizado:** Consulta [PROMPT-STATUS-README.md](../PROMPT-STATUS-README.md) para ver el progreso actual del proyecto.
 
 ---
 

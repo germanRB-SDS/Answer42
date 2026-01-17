@@ -221,21 +221,9 @@ curl http://localhost:3001/api/health
 
 ## 6. Próximos Pasos
 
-El proyecto está estructurado y listo para desarrollar. Los siguientes prompts implementarán:
+El proyecto está estructurado y listo para desarrollar.
 
-```
-[✅] Prompt 1: Arquitectura y decisiones
-[✅] Prompt 2: Setup del proyecto (ACTUAL)
-[ ] Prompt 3: Backend base + configuración SQLite
-[ ] Prompt 4: Sistema de registro
-[ ] Prompt 5: Sistema de login + sesiones
-[ ] Prompt 6: Seguridad avanzada
-[ ] Prompt 7: Frontend login/registro
-[ ] Prompt 8: Dashboard post-login + alertas
-[ ] Prompt 9: Tests mínimos
-[ ] Prompt 10: Revisión OWASP
-[ ] Prompt 11: Documentación final
-```
+> **Estado actualizado:** Consulta [PROMPT-STATUS-README.md](../PROMPT-STATUS-README.md) para ver el progreso actual del proyecto.
 
 ---
 

@@ -333,19 +333,7 @@ cd frontend && npm run preview
 
 ## 11. Próximos Pasos
 
-```
-[✅] Prompt 1: Arquitectura y decisiones
-[✅] Prompt 2: Setup del proyecto
-[✅] Prompt 3: Backend base + SQLite
-[✅] Prompt 4: Registro (implementado)
-[✅] Prompt 5: Login + sesiones (implementado)
-[✅] Prompt 6: Seguridad (implementada en P2-P3)
-[✅] Prompt 7: Frontend login/registro (ACTUAL)
-[✅] Prompt 8: Dashboard + alertas (ACTUAL)
-[ ] Prompt 9: Tests mínimos
-[ ] Prompt 10: Revisión OWASP
-[ ] Prompt 11: Documentación final
-```
+> **Estado actualizado:** Consulta [PROMPT-STATUS-README.md](../PROMPT-STATUS-README.md) para ver el progreso actual del proyecto.
 
 > [Nota profesor: El frontend y dashboard están completos e integrados. Los Prompts 6 y 8 ya están incluidos en la implementación actual.]
 

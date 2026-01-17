@@ -153,6 +153,10 @@ node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 - Notificaciones por email
 - Certificados HTTPS (desarrollo local)
 
+## Estado del Proyecto
+
+Consulta el archivo **[PROMPT-STATUS-README.md](./PROMPT-STATUS-README.md)** para ver el estado actual de los prompts ejecutados y el progreso del proyecto.
+
 ## Licencia
 
 MIT - Proyecto educativo para taller DAW

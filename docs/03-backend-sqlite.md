@@ -1,4 +1,4 @@
-# Prompt 3 – Backend Base + Configuración SQLite
+R# Prompt 3 – Backend Base + Configuración SQLite
 
 **Proyecto:** Answer42 - Sistema de Autenticación Seguro (Taller DAW)
 **Fecha:** Enero 2026
@@ -345,19 +345,7 @@ sqlite3 data/answer42.db "SELECT * FROM audit_log;"
 
 ## 8. Próximos Pasos
 
-```
-[✅] Prompt 1: Arquitectura y decisiones
-[✅] Prompt 2: Setup del proyecto
-[✅] Prompt 3: Backend base + SQLite (ACTUAL)
-[ ] Prompt 4: Sistema de registro (ya implementado, revisar)
-[ ] Prompt 5: Sistema de login + sesiones (ya implementado, revisar)
-[ ] Prompt 6: Seguridad avanzada (rate limiting, CSRF)
-[ ] Prompt 7: Frontend login/registro
-[ ] Prompt 8: Dashboard post-login + alertas
-[ ] Prompt 9: Tests mínimos
-[ ] Prompt 10: Revisión OWASP
-[ ] Prompt 11: Documentación final
-```
+> **Estado actualizado:** Consulta [PROMPT-STATUS-README.md](../PROMPT-STATUS-README.md) para ver el progreso actual del proyecto.
 
 > [Nota profesor: El backend está completamente funcional. Los Prompts 4 y 5 ya están implementados en el código del Prompt 2. Podemos pasar directamente al Prompt 6 (seguridad avanzada) o al Prompt 7 (frontend).]
 

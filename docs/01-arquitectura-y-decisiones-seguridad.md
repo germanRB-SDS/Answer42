@@ -749,8 +749,10 @@ Antes de pasar al Prompt 2, verificar:
 
 ## 9. Próximos Pasos (Mapa de Ruta)
 
+> **Estado actualizado:** Consulta [PROMPT-STATUS-README.md](../PROMPT-STATUS-README.md) para ver el progreso actual del proyecto.
+
 ```
-[✅] Prompt 1: Arquitectura y decisiones de seguridad (ACTUAL)
+[ ] Prompt 1: Arquitectura y decisiones de seguridad
 [ ] Prompt 2: Setup repositorio + estructura de carpetas
 [ ] Prompt 3: Backend base + configuración SQLite
 [ ] Prompt 4: Sistema de registro
